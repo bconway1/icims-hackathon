@@ -8,10 +8,10 @@ time.sleep(2)
 # Check if the webcam works
 if vc.isOpened():
 # Try to get the first frame
-retval, frame = vc.read()
+  retval, frame = vc.read()
 else:
 # Exit the program
-sys.exit(1)
+  sys.exit(1)
 # Read in the next frame
 retval, frame = vc.read()
 # Show the frame to the user
