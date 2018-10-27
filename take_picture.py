@@ -3,11 +3,13 @@ import cv2, sys
 from datetime import datetime
 
 # Define constants
-DEVICE_NUMBER = 0
+DEVICE_NUMBER = 1
 IMAGE_FILE = "output_" + str(datetime.now().time()) + ".jpg"
 
 # Initialize webcam
 vc = cv2.VideoCapture(DEVICE_NUMBER)
+
+time.sleep(2)
 
 # Check if the webcam works
 if vc.isOpened():
