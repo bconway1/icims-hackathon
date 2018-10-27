@@ -34,3 +34,6 @@ def in_range():
         return False
     else:
         return True
+while(True):
+    print(in_range())
+    time.sleep(1)
